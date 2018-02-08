@@ -1,0 +1,17 @@
+{
+  "name": "testserver",
+  "version": "1.0.0",
+  "description": "Quick demo of Node web server",
+  "main": "server.js",
+  "dependencies": {
+    "babel-eslint": "^8.2.1",
+    "formidable": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Devlin Duldulao",
+  "license": "ISC"
+}
