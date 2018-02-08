@@ -6,12 +6,12 @@ var server = http.createServer(function (req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
-  if (req.method.toLowerCase() == 'post') {
+  if (req.method.toLowerCase() === 'post') {
     processForm(req, res);
     return;
   }
 
-  if (req.method.toLowerCase() == 'get') {
+  if (req.method.toLowerCase() === 'get') {
     var data = {
       data: {
         coffees : [
@@ -45,7 +45,7 @@ function processForm(req, res) {
 
   form.parse(req, function (err, fields) {
 
-    fields.id = 'ABC123';
+    fields.id = '1';
 
     res.writeHead(200, {
       'content-type': 'text/plain'
