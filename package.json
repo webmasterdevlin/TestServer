@@ -4,7 +4,8 @@
   "description": "Quick demo of Node web server",
   "main": "server.js",
   "dependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
     "formidable": "^1.1.1"
   },
   "devDependencies": {},

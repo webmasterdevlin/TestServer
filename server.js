@@ -12,23 +12,19 @@ var server = http.createServer(function (req, res) {
   }
 
   if (req.method.toLowerCase() === 'get') {
-    var data = {
-      data: {
-        coffees : [
-          'Espresso',
-          'Double Espresso',
-          'Short Macchiato',
-          'Ristretto',
-          'Long Black',
-          'Cafe Latte',
-          'Cappuccino',
-          'Flat White',
-          'Piccolo Latte',
-          'Affogato',
-          'Americano',
-        ]
-      }
-    };
+    var data = [
+        {"id":1, "name":"Espresso"},
+        {"id":2, "name":"Double Espresso"},
+        {"id":3, "name":"Short Macchiato"},
+        {"id":4, "name":"Ristretto"},
+        {"id":5, "name":"Long Black"},
+        {"id":6, "name":"Cafe Latte"},
+        {"id":7, "name":"Cappucino"},
+        {"id":8, "name":"Flat White"},
+        {"id":9, "name":"Piccolo Latte"},
+        {"id":10, "name":"Affogato"},
+        {"id":11, "name":"Americano"},
+      ];
 
     var responseData = JSON.stringify(data);
     res.end(responseData);
