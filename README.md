@@ -1,7 +1,5 @@
-Set up
-
-In the commandline
+Set up in the commandline
 
 npm init
-and
+
 npm install --save formidable
